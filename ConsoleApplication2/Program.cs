@@ -28,7 +28,7 @@ namespace ConsoleApplication2
                     Console.WriteLine("Enter second number: ");
                     b = Convert.ToInt32(Console.ReadLine());
                     result = a+b;
-                    Console.WriteLine("Result " + result);
+                    Console.WriteLine("Result is " + result);
                 }
                 catch (Exception)
                 {

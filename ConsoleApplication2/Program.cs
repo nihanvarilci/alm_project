@@ -12,6 +12,8 @@ namespace ConsoleApplication2
         {
             String yourname = "Mr. Nice";
             Console.WriteLine("Hello {0}", yourname);
+            String x = "welcome to calculator";
+            Console.WriteLine("Hello {0}", x);
         }
     }
 }

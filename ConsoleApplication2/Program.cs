@@ -16,7 +16,7 @@ namespace ConsoleApplication2
             Console.WriteLine("Hello {0}", x);
             Console.WriteLine("ASD");
             double result;
-            Console.WriteLine("Enter your choice(divide: 1)");
+            Console.WriteLine("Enter your choice(addition: 1)");
             int choice = Convert.ToInt32(Console.ReadLine());
             if (choice == 1)
             {
@@ -25,9 +25,9 @@ namespace ConsoleApplication2
                     int a, b;
                     Console.WriteLine("Enter first number: ");
                     a = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter second: ");
+                    Console.WriteLine("Enter second number: ");
                     b = Convert.ToInt32(Console.ReadLine());
-                    result = (double)a / b;
+                    result = a+b;
                     Console.WriteLine("Result " + result);
                 }
                 catch (Exception)

@@ -6,39 +6,47 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
+
     class Program
     {
+
         static void Main(string[] args)
         {
+            double result;
             String yourname = "Mr. Nice";
             Console.WriteLine("Hello {0}", yourname);
             String x = "welcome to calculator";
             Console.WriteLine("Hello {0}", x);
             Console.WriteLine("ASD");
-<<<<<<< HEAD
-            double result;
+
+
             Console.WriteLine("Enter your choice(addition: 1)");
             int choice = Convert.ToInt32(Console.ReadLine());
             if (choice == 1)
             {
-                try
-                {
-                    int a, b;
-                    Console.WriteLine("Enter first number: ");
-                    a = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter second number: ");
-                    b = Convert.ToInt32(Console.ReadLine());
-                    result = a+b;
-                    Console.WriteLine("Result is  " + result);
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("error");
-                    throw;
-                }
+                result = addition();
             }
-=======
->>>>>>> parent of dc82be3... division operation on integers
+
+        }
+        static double addition()
+        {
+
+            try
+            {
+                int a, b;
+                Console.WriteLine("Enter first number: ");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter second number: ");
+                b = Convert.ToInt32(Console.ReadLine());
+                double result = a + b;
+                Console.WriteLine("Result is  " + result);
+                return result;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("error in addition");
+                throw;
+            }
         }
     }
 }

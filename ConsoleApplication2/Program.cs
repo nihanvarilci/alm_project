@@ -6,47 +6,54 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-
     class Program
     {
-
         static void Main(string[] args)
         {
-            double result;
             String yourname = "Mr. Nice";
             Console.WriteLine("Hello {0}", yourname);
             String x = "welcome to calculator";
             Console.WriteLine("Hello {0}", x);
             Console.WriteLine("ASD");
 
-
-            Console.WriteLine("Enter your choice(addition: 1)");
+            double result;
+            Console.WriteLine("Enter your choice(addition: 1), (division:  2)");
             int choice = Convert.ToInt32(Console.ReadLine());
+            
             if (choice == 1)
             {
-                result = addition();
+                Console.WriteLine("Enter first number: ");
+                double a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter second number: ");
+                double b = Convert.ToInt32(Console.ReadLine());
+                result = addition(a,b);
+            }
+            else if(choice == 2)
+            {
+                Console.WriteLine("Enter first number: ");
+                double a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter second number: ");
+                double b = Convert.ToInt32(Console.ReadLine());
+                result = division(a, b);
             }
 
         }
-        static double addition()
+        static double addition(double a, double b)
         {
-
-            try
-            {
-                int a, b;
-                Console.WriteLine("Enter first number: ");
-                a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter second number: ");
-                b = Convert.ToInt32(Console.ReadLine());
-                double result = a + b;
-                Console.WriteLine("Result is  " + result);
-                return result;
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("error in addition");
-                throw;
-            }
+            double result;
+           
+            result = a + b;
+            Console.WriteLine("Result is  " + result);
+            return result;
+           
+        }
+        static double division(double a, double b)
+        {
+            double result;
+            
+            result = a / b;
+            Console.WriteLine("Result is  " + result);
+            return result;           
         }
     }
 }

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Program p1 = new ConsoleApplication2.Program();
             String yourname = "Mr. Nice";
             Console.WriteLine("Hello {0}", yourname);
             String x = "welcome to calculator";
@@ -23,22 +24,22 @@ namespace ConsoleApplication2
             if (choice == 1)
             {
                 Console.WriteLine("Enter first number: ");
-                double a = Convert.ToInt32(Console.ReadLine());
+                double a = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Enter second number: ");
-                double b = Convert.ToInt32(Console.ReadLine());
-                result = addition(a,b);
+                double b = Convert.ToDouble(Console.ReadLine());
+                result = p1.addition(a,b);
             }
             else if(choice == 2)
             {
                 Console.WriteLine("Enter first number: ");
-                double a = Convert.ToInt32(Console.ReadLine());
+                double a = Double.Parse(Console.ReadLine());
                 Console.WriteLine("Enter second number: ");
-                double b = Convert.ToInt32(Console.ReadLine());
-                result = division(a, b);
+                double b = Double.Parse(Console.ReadLine());
+                result = p1.division(a, b);
             }
 
         }
-        static double addition(double a, double b)
+        public double addition(double a, double b)
         {
             double result;
            
@@ -47,11 +48,11 @@ namespace ConsoleApplication2
             return result;
            
         }
-        static double division(double a, double b)
+        public double division(double a, double b)
         {
-            double result;
+            int result;
             
-            result = a / b;
+            result =(int)( a / b);
             Console.WriteLine("Result is  " + result);
             return result;           
         }

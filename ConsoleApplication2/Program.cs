@@ -15,6 +15,7 @@ namespace ConsoleApplication2
             String x = "welcome to calculator";
             Console.WriteLine("Hello {0}", x);
             Console.WriteLine("ASD");
+<<<<<<< HEAD
             double result;
             Console.WriteLine("Enter your choice(addition: 1)");
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -36,6 +37,8 @@ namespace ConsoleApplication2
                     throw;
                 }
             }
+=======
+>>>>>>> parent of dc82be3... division operation on integers
         }
     }
 }

@@ -12,7 +12,7 @@ namespace ConsoleApplication2
         {
             Program p1 = new ConsoleApplication2.Program(); // deneme 
             String yourname = "Mr. Nice";                       // deneme 2
-            Console.WriteLine("Hello {0}", yourname);
+            Console.WriteLine("Hello {0}", yourname);       //deneme 3
             String x = "welcome to calculator";
             Console.WriteLine("Hello {0}", x);
             Console.WriteLine("ASD");

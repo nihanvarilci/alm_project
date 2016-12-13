@@ -11,7 +11,7 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             Program p1 = new ConsoleApplication2.Program(); // deneme 
-            String yourname = "Mr. Nice";
+            String yourname = "Mr. Nice";                       // deneme 2
             Console.WriteLine("Hello {0}", yourname);
             String x = "welcome to calculator";
             Console.WriteLine("Hello {0}", x);

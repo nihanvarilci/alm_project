@@ -67,9 +67,9 @@ namespace ConsoleApplication2
         }
         public double division(double a, double b)
         {
-            int result;
+            double result;
             
-            result =(int)( a / b);
+            result =a / b;
             Console.WriteLine("Result is  " + result);
             return result;           
         }

@@ -18,7 +18,7 @@ namespace ConsoleApplication2
             Console.WriteLine("ASD");
 
             double result;
-            Console.WriteLine("Enter your choice(addition: 1), (division:  2)");
+            Console.WriteLine("Enter your choice(addition: 1),(subtraction:  2), (division:  3)");
             int choice = Convert.ToInt32(Console.ReadLine());
             
             if (choice == 1)
@@ -29,7 +29,15 @@ namespace ConsoleApplication2
                 double b = Convert.ToDouble(Console.ReadLine());
                 result = p1.addition(a,b);
             }
-            else if(choice == 2)
+            else if (choice == 2)
+            {
+                Console.WriteLine("Enter first number: ");
+                double a = Double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter second number: ");
+                double b = Double.Parse(Console.ReadLine());
+                result = p1.subtraction(a, b);
+            }
+            else if(choice == 3)
             {
                 Console.WriteLine("Enter first number: ");
                 double a = Double.Parse(Console.ReadLine());
@@ -47,6 +55,15 @@ namespace ConsoleApplication2
             Console.WriteLine("Result is  " + result);
             return result;
            
+        }
+        public double subtraction(double a, double b)
+        {
+            double result;
+
+            result = a - b;
+            Console.WriteLine("Result is  " + result);
+            return result;
+
         }
         public double division(double a, double b)
         {

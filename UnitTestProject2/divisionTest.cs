@@ -19,7 +19,7 @@ namespace UnitTestProject2
         [TestMethod]
         public void divisionTestForDoubles()
         {
-            double result = p1.division(2,4);
+            double result = p1.division(2.0,4.0);
             double expected = 0.5;
             Assert.AreEqual(result, expected);
         }

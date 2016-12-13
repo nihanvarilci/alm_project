@@ -14,7 +14,7 @@ namespace ConsoleApplication2
             String yourname = "Mr. Nice";                       // deneme 2
             Console.WriteLine("Hello {0}", yourname);       //deneme 3
             String x = "welcome to calculator";             // deneme4
-            Console.WriteLine("Hello {0}", x);
+            Console.WriteLine("Hello {0}", x);              //deneme5
             Console.WriteLine("ASD");
 
             double result;

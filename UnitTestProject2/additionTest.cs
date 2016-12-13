@@ -45,7 +45,7 @@ namespace UnitTestProject2
 
             double result = p1.addition(2.1, 3);
             double expected = 5.1;
-            Assert.AreEqual(result, expected);
+            Assert.AreEqual(result, expected); // deneme ---------------------------
             //Assert.Inconclusive("Verify the correctness of addition operation on doubles");
         }
     }

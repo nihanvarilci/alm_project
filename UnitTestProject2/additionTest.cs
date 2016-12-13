@@ -39,5 +39,14 @@ namespace UnitTestProject2
             Assert.AreEqual(result, expected);
             //Assert.Inconclusive("Verify the correctness of addition operation on negative values");
         }
+        [TestMethod]
+        public void testAdditionBuggg()
+        {
+
+            double result = p1.addition(2.1, 3);
+            double expected = 5.2;
+            Assert.AreEqual(result, expected);
+            //Assert.Inconclusive("Verify the correctness of addition operation on doubles");
+        }
     }
 }

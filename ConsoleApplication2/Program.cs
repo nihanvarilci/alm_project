@@ -20,8 +20,9 @@ namespace ConsoleApplication2
             String x = "welcome to calculator";             // deneme4
             Console.WriteLine("Hello {0}", x);              //deneme5
             Console.WriteLine("ASD");
-
+            /////
             double result;
+            //////////////
             Console.WriteLine("Enter your choice(addition: 1),(subtraction:  2), (division:  3)");
             int choice = Convert.ToInt32(Console.ReadLine());
             
